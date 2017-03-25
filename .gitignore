@@ -4,5 +4,7 @@ var/cache/
 app/etc/config.xml
 var/cache/
 var/session
-app/etc/
+app/etc/local.xml
+app/etc/config.xml
+app/etc/*
 .idea
