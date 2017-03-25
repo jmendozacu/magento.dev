@@ -1,0 +1,3 @@
+.htaccess.sample
+staging.magento.dev/
+var/cache/
