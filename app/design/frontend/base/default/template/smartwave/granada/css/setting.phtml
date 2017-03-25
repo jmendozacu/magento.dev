@@ -1,0 +1,30 @@
+<?php 
+    $store = Mage::app()->getStore();
+    $code  = $store->getCode();
+    $helper = Mage::helper('granada');
+    $s = $helper->getConfigGroup();
+?>
+body {
+
+}
+<?php if ($s['product_view']['view_type'] == 'product-view-type2'): ?>
+    <?php if ($s['product_view']['bg_color']): ?>
+        .catalog-product-view.product-view-type2 .product-image:before, .product-view-type2 .product-image:after {background-color: <?php echo $s['product_view']['bg_color']?>;}
+    <?php endif; ?>
+    <?php if ($s['product_view']['bg_opacity']): ?>
+        .catalog-product-view.product-view-type2 .product-image:before, .product-view-type2 .product-image:after {opacity: <?php echo $s['product_view']['bg_opacity']?>;}
+    <?php endif; ?>
+    <?php if ($s['product_view']['txt_color']): ?>
+        .catalog-product-view.product-view-type2 .product-shop,
+        .catalog-product-view.product-view-type2 .product-shop h1,
+        .catalog-product-view.product-view-type2 .product-shop h2,
+        .catalog-product-view.product-view-type2 .product-shop h3,
+        .catalog-product-view.product-view-type2 .product-shop h4,
+        .catalog-product-view.product-view-type2 .product-shop h5,
+        .catalog-product-view.product-view-type2 .product-shop h6,
+        .catalog-product-view.product-view-type2 .product-shop a,
+        .catalog-product-view.product-view-type2 .product-shop label,
+        .catalog-product-view.product-view-type2 .product-shop input {color: <?php echo $s['product_view']['txt_color']?>;}
+    <?php endif; ?>
+<?php endif; ?>
+<?php echo $s['custom_settings']['custom_style'];?>
