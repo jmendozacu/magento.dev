@@ -2,3 +2,5 @@
 staging.magento.dev/
 var/cache/
 app/etc/config.xml
+var/cache/
+var/session
