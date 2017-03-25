@@ -1,3 +1,4 @@
 .htaccess.sample
 staging.magento.dev/
 var/cache/
+app/etc/config.xml
