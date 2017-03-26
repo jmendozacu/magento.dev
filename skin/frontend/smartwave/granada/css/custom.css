@@ -3,3 +3,27 @@
     -moz-border-radius: 40px;
     border-radius: 40px;
 }
+
+/* Category Blocks for Category Page */
+.catblocks li {
+    width: 25%;
+    float: left;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.catblocks li:last-child {
+    padding-right:0;
+}
+.catblocks li:first-child {
+    padding-left: 0;
+}
+
+.catblocks li span {
+    margin: 0 auto;
+}
+
+.label-icon.sale-label {
+    background-color: white;
+    opacity: .8;
+}
+
