@@ -16,3 +16,4 @@ app/code/community/Nexcessnet/Turpentine/misc/custom_include*.vcl
 .idea
 .DS_Store
 nbproject/
+/media/*
