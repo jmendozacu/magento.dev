@@ -1,0 +1,92 @@
+body {
+    overflow-x: hidden;
+}
+
+/*Topbar links*/
+.topbar_links {
+    margin-top: 0 !important;
+    position: relative;
+
+}
+.topbar_links li:first-child {}
+.topbar_links li:last-child  {
+    padding-right:0;
+}
+
+.topbar_links li {
+    font-family: Helvetica;
+}
+
+/* TopBar */
+#topbar {
+    background:none repeat scroll 0 0 #000;
+    color:#FFF;
+    font-size:12px;
+    padding:10px 0 0;
+    border-bottom:3px solid #FA9221;
+}
+#topbar ul {
+    /*margin:5px 0 0;*/
+}
+#topbar a {
+    color:#9F9F9F;
+}
+#topbar a:hover {
+    color:#f89223
+}
+#topbar .user-links .welcome {
+    padding:10px;
+}
+#topbar .user-links ul {
+    background:none repeat scroll 0 0 #FA9221;
+    margin:0;
+    padding:10px;
+}
+#topbar .user-links a {
+    color:#fff;
+}
+.welcome {}
+
+
+/* Padding fixes */
+.no-pad-right {
+    padding-right: 0 !important;
+}
+.no-pad-left{
+    padding-left: 0 !important;
+}
+
+/*Logo*/
+.logo {
+    margin: 10px 15px 10px 0;
+    display: block;
+}
+.logo img {
+    display: block;
+}
+
+/*Header*/
+/* Header */
+#header {
+    padding-top:10px;
+}
+#header .logo {
+    display:block;
+    margin-bottom:20px;
+}
+#header .block-topcart {
+    margin-top: 5px;
+    padding: 14px 20px 10px;
+}
+#header .block-topcart .block-title {
+    font-size: 15px;
+    margin-bottom: 5px
+}
+#header .block-topcart p.empty {
+    font-size: 12px;
+    color: #666;
+    font-style: italic
+}
+#header .block-topcart .block-content {
+    display: none
+}
