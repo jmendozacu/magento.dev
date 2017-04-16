@@ -126,7 +126,8 @@ body {
     color:rgba(0,0,0,0.3);
     padding:20px 0;
     border-bottom:5px solid #333;
-    font-size:12px,;
+    font-size:12px;
+    margin-top: 20px;
 }
 #footer h4 {
     color:rgba(0,0,0,0.6);
@@ -181,4 +182,70 @@ body {
 }
 #footer .footer-social a.ico-google:hover span {
     background-position:-80px -28px;
+}
+.block-subscribe {
+    margin-top: 20px;
+}
+/* Carousel */
+#after-header {
+    background-color: #efefef;
+}
+#slider-home {
+    text-align:center;
+    padding:40px 0;
+}
+#slider-home .carousel-control.right,#slider-home .carousel-control.
+left {
+    background:none;
+}
+#slider-home .carousel-indicators {
+    bottom:20px;
+    left:0;
+    margin:0;
+    text-align:left;
+}
+/*Carousel Navigation*/
+.carousel-control.right {
+    background: transparent !important;
+}
+.carousel-control.left{
+    background:transparent !important;
+}
+
+/* Carousel Bullets */
+.carousel-indicators li {
+    border:0;
+    background-color:#333;
+}
+.carousel-indicators li:hover {
+    background:#41b7d8;
+}
+#slider-home .carousel-indicators .active {
+    background:#f37541;
+    border-color:#f37541;
+}
+/* 3 Banners */
+#banner-home {
+}
+#banner-home div {
+    color:#FFF;
+    height:85px;
+    margin:25px 0;
+    padding:15px;
+    background: #ddd;
+}
+#banner-home h3 {
+    font-size:20px;
+    margin:0;
+    padding:0;
+}
+/* Text Banners Background Colors */
+#banner-home div.bg-orange {
+    background:#f89223;
+}
+#banner-home div.bg-cyan {
+    background:#41b7d8;
+}
+#banner-home div.bg-darkgrey {
+    background:#333;
 }

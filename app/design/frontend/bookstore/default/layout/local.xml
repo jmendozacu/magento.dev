@@ -104,6 +104,18 @@ Copyright (c) 2013 Andrea Saccà.
             <action method="setTemplate">
                 <template>page/2columns-left.phtml</template>
             </action>
+
+            <!-- Defining the reference block slider for homepage -->
+            <block type="core/text_list" name="slider" as="slider" translate="label">
+                <label>Slider Block</label>
+            </block>
+
+            <!-- Removing default bloks from left navigation -->
+            <remove name="left.permanent.callout" /> <!--removes the informational banner at the end-->
+            <remove name="tags_popular" /> <!--removes tags block-->
+
+
+
         </reference>
 
 
