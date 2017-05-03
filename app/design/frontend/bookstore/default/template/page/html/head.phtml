@@ -31,6 +31,14 @@
 <meta name="robots" content="<?php echo htmlspecialchars($this->getRobots()) ?>" />
 <link rel="icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon" />
 <link rel="shortcut icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon" />
+<!-- Inserting Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet"><!--Playfair Display -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">  <!--Open Sanz Light-->
+
+
+
+
+
 <!--[if lt IE 7]>
 <script type="text/javascript">
 //<![CDATA[
@@ -43,3 +51,5 @@
 <?php echo $this->getChildHtml() ?>
 <?php echo $this->helper('core/js')->getTranslatorScript() ?>
 <?php echo $this->getIncludes() ?>
+
+

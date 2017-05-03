@@ -1,3 +1,13 @@
+/*TYpography*/
+h1,h2,h3 {
+    font-family: 'Playfair Display', serif !important;
+}
+
+
+body  {
+    font-family: 'Open Sans Condensed', sans-serif !important;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -49,6 +59,11 @@ body {
 
 
 /* Padding fixes */
+.no-pad-sides {
+    padding-left:0 !important;
+    padding-right:0 !important;
+}
+
 .no-pad-right {
     padding-right: 0 !important;
 }
@@ -279,6 +294,8 @@ left {
 }
 .products-grid li.item {
     margin-bottom: 30px;
+    display: inline-table;
+    position: relative;
 }
 .products-grid .product-name {
     font-size:14px;
@@ -297,5 +314,144 @@ left {
 .products-grid .product-image {
     margin-bottom:10px;
     display:block;
+}
+.item:hover .heart-it {
+    display: block;
+}
+.item-container.img-thumbnail {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+/*Category Page Banner Image*/
+.catblocks {
+    margin:10px 0;
+    padding:0;
+    display: table;
+}
+.catblocks li {
+    width:24%;
+    float: left;
+    margin: 0 5px;
+}
+.catblocks li:first-child {
+    margin-left:0;
+}
+.catblocks li:last-child{
+    margin-right:0;
+}
+
+.category-image img {
+    width: 100%;
+}
+.catblocks {
+    list-style: none;
+}
+.catblocks li a {
+    display: inline-flex;
+    float: left;
+}
+.catblocks li a img {
+    width: 100%;
+    display: block;
+    clear: both;
+}
+.catblocks li span {
+    display: block;
+}
+
+.page-title.category-title h1 {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+.pager {
+    padding-left: 0;
+    margin: 0 !important;
+    text-align: center;
+    list-style: none;
+    /*width: 30%;*/
+    float: left;
+    display: inline-table;
+}
+
+.amount {
+    text-align: left;
+    float: left;
+    margin-top:1px ;
+}
+.limiter {
+    float: left;
+    margin-left: 10px;
+    display: inline-table;
+}
+.sorter {
+    width:100%;
+}
+.toolbar {
+    padding: 5px 0;
+    border-bottom: 1px solid #FA9221;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/*Category Page Product List*/
+.products-grid li {
+    display: inline-table;
+    padding: 0 3px;
+}
+.products-grid li a img {
+    display: block;
+    margin:0 auto;
+    width:100%;
+    height:auto;
+}
+.add-to-links {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+.products-grid .item .img-thumbnail {
+    border:none;
+}
+
+/*Product Grid*/
+.product-buttons {
+    display: flex;
+    position: relative;
+    padding-left: 0;
+}
+.product-buttons li {
+
+}
+
+.heart-it { /*wishlist button*/
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    z-index: 99999999;
+    margin: 10px;
+    display: none;
+}
+
+
+/*Breadcrumbs*/
+.breadcrumbs ul li {
+    display: inline-table;
+}
+.breadcrumbs ul{
+    padding-left:30px;
+}
+.limiter label {
+    margin-right:10px;
+}
+.sort-by label {
+    margin-right:10px;
 }
 

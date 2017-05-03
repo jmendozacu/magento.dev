@@ -42,6 +42,19 @@ Copyright (c) 2013 Andrea Saccà.
                 <params/><if>lt IE 9</if>
             </action>
 
+            <!--MatcHeight JS-->
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/matchHeight.js</name>
+            </action>
+
+            <!--Adding FontAwesome-->
+            <action method="additem">
+                <type>skin_css</type>
+                <name>css/font-awesome/css/font-awesome.css</name>
+
+            </action>
+
             <!--Adding CSS Files-->
             <action method="addItem">
                 <type>skin_css</type>
@@ -155,13 +168,10 @@ Copyright (c) 2013 Andrea Saccà.
             </block>
 
             <block type="newsletter/subscribe" name="footer.newsletter" as="footer-newsletter" template="newsletter/subscribe.phtml" />
-
-
-
-
-
-
         </reference>
+
+
+
 
     </default>
 </layout>
