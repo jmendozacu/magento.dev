@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<global>
+		<models>
+			<settings>
+				<class>SWW_Settings_Model</class>
+			</settings>
+		</models>
+		<helpers>
+			<settings>
+				<class>SWW_Settings_Helper</class>
+			</settings>
+		</helpers>
+	</global>
+	<adminhtml>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<SWW>
+											<title>SWW - All</title>
+										</SWW>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+	</adminhtml>
+</config>

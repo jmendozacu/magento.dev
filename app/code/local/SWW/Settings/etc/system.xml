@@ -1,0 +1,333 @@
+<config>
+	<tabs>
+		<SWW translate="label">
+			<label>Sprout Web Works</label>
+			<sort_order>100</sort_order>
+		</SWW>
+	</tabs>
+	<sections>
+		<!-- <first_section translate="label">
+			<label>Shopping Cart</label>
+			<tab>Sprout Web Works</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>1001</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<mygroup translate="label" module="settings">
+				   <label>My test group title</label>
+				   <frontend_type>text</frontend_type>
+				   <sort_order>01</sort_order>
+				   <show_in_default>1</show_in_default>
+				   <show_in_website>1</show_in_website>
+				   <show_in_store>1</show_in_store>
+					 <fields>
+					     <other_input_field translate="label">
+					       <label>Input Field: </label>
+					       <comment>This is a comment</comment>
+					       <frontend_type>text</frontend_type>
+					       <sort_order>20</sort_order>
+					       <show_in_default>1</show_in_default>
+					       <show_in_website>1</show_in_website>
+					       <show_in_store>1</show_in_store>
+					     </other_input_field>
+					 </fields>
+				</mygroup>
+			</groups>
+		</first_section> -->
+		<SWW translate="label">
+			<label>Theme Settings</label>
+			<tab>SWW</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>1000</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<!-- TYPOGRAPHY GROUP -->
+				<typography translate="label" module="settings">
+					<label>Typography</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>0</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<option_divider translate="label comment">
+							<label>Main Options: </label>
+							<comment></comment>
+							<frontend_type>hidden</frontend_type>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</option_divider>
+						<font_text translate="label">
+							<label>Font Combinations: </label>
+							<comment>Custom Source model Font</comment>
+							<frontend_type>select</frontend_type>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<source_model>settings/source_font</source_model>
+						</font_text>
+						<font_text_size translate="label">
+							<label>Text Font Size: </label>
+							<comment>Custom Source Model Fontsize</comment>
+							<frontend_type>select</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<source_model>settings/source_fontsize</source_model>
+						</font_text_size>
+					</fields>
+				</typography>
+				<!-- HEADER GROUP -->
+				<header_options translate="label" module="settings">
+					<label>Theme Header</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>1</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<!--Header Type Settings-->
+						<header_option_divider translate="label comment">
+							<label>Header Options </label>
+							<comment></comment>
+							<frontend_type>hidden</frontend_type>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</header_option_divider>
+						<header_type>
+							<label>Header Type: </label>
+							<comment>Choose a header to use</comment>
+							<frontend_type>select</frontend_type>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<source_model>settings/header_type</source_model>
+						</header_type>
+						<header_block>
+							<label>Custom Header Block Id: </label>
+							<comment>Select a Custom CMS Block to be placed on the header. Only on haeaders 1 and 2.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</header_block>
+
+
+						<!--Sticky Menu Settings-->
+						<sticky_option_divider translate="label comment">
+							<label>Sticky Header Options </label>
+							<comment></comment>
+							<frontend_type>hidden</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</sticky_option_divider>
+						<sticky_settings>
+							<label>Sticky Menu: </label>
+							<comment>Enable sticky menu on scroll.</comment>
+							<frontend_type>select</frontend_type>
+							<sort_order>4</sort_order>
+							<source_model>adminhtml/system_config_source_enabledisable</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</sticky_settings>
+						<sticky_header_logo>
+							<label>Sticky Logo: </label>
+							<comment></comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</sticky_header_logo>
+
+					</fields>
+				</header_options>
+
+				<!-- FOOTER GROUP -->
+				<footer_options translate="label" module="settings">
+					<label>Theme Footer</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>2</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<header_option translate="label">
+					       <label>Input Field: </label>
+					       <comment>This is a comment</comment>
+					       <frontend_type>text</frontend_type>
+					       <sort_order>000</sort_order>
+					       <show_in_default>1</show_in_default>
+					       <show_in_website>1</show_in_website>
+					       <show_in_store>1</show_in_store>
+					     </header_option>
+					</fields>
+				</footer_options>
+
+				<!--THEME DESIGN-->
+				<theme_design translate="label" module="settings">
+					<label>Theme Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>3</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<theme_settings_option_divider translate="label comment">
+							<label>Theme Settings </label>
+							<comment><bold>testing this bold text</bold></comment>
+							<frontend_type>hidden</frontend_type>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</theme_settings_option_divider>
+
+						<custom_css>
+							<label>Load Custom CSS: </label>
+							<comment>Enable/Disable custom CSS loading with Custom.css file.</comment>
+							<frontend_type>select</frontend_type>
+							<sort_order>1</sort_order>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</custom_css>
+
+					</fields>
+				</theme_design>
+
+
+				 <mygroup translate="label" module="settings">
+				   <label>My test group title</label>
+				   <frontend_type>text</frontend_type>
+				   <sort_order>4</sort_order>
+				   <show_in_default>1</show_in_default>
+				   <show_in_website>1</show_in_website>
+				   <show_in_store>1</show_in_store>
+					 <fields>
+					     <my_input_field translate="label">
+					       <label>Input Field: </label>
+					       <comment>This is a comment</comment>
+					       <frontend_type>text</frontend_type>
+					       <sort_order>20</sort_order>
+					       <show_in_default>1</show_in_default>
+					       <show_in_website>1</show_in_website>
+					       <show_in_store>1</show_in_store>
+					     </my_input_field>
+					     <text_area_field>
+					     	<label>Text Area</label>
+					     	<comment>Testing a text area</comment>
+					     	<frontend_type>textarea</frontend_type>
+					     	<sort_order>20</sort_order>
+					       <show_in_default>1</show_in_default>
+					       <show_in_website>1</show_in_website>
+					       <show_in_store>1</show_in_store>
+
+					     </text_area_field>
+					     <first_select_field translate="label">
+					       <label>Dropdown: </label>
+					       <comment>Source model provider Magento's default Yes/No values</comment>
+					       <frontend_type>select</frontend_type>
+					       <sort_order>90</sort_order>
+					       <show_in_default>1</show_in_default>
+					       <show_in_website>1</show_in_website>
+					       <show_in_store>1</show_in_store>
+					       <source_model>adminhtml/system_config_source_yesno</source_model>
+					     </first_select_field>
+					     <!-- <datetime_field>
+					     	<label>Date & Time</label>
+					     	<comment>Getting Date and Time</comment>
+					     	<frontend_type>datetime</frontend_type>
+					     	<sort_order>20</sort_order>
+					       <show_in_default>1</show_in_default>
+					       <show_in_website>1</show_in_website>
+					       <show_in_store>1</show_in_store>
+					     </datetime_field> -->
+
+					     <enable_this>
+					     	<label>Footer Social</label>
+					     	<comment>Shows/Hides social media icons from footer</comment>
+					     	<frontend_type>select</frontend_type>
+					     	<sort_order>40</sort_order>
+					     	<source_model>adminhtml/system_config_source_enabledisable</source_model>
+					     	<sort_order>20</sort_order>
+					       <show_in_default>1</show_in_default>
+					       <show_in_website>1</show_in_website>
+					       <show_in_store>1</show_in_store>
+					     </enable_this>
+
+
+
+					     <button_field>
+					     	<label>Ok</label>
+					     	<frontend_type>button</frontend_type>
+					     	<comment>This is a button</comment>
+					     	<sort_order>50</sort_order>
+					       <show_in_default>1</show_in_default>
+					       <show_in_website>1</show_in_website>
+					       <show_in_store>1</show_in_store>
+					     </button_field>
+
+
+					     
+					 </fields>
+				</mygroup>
+				<!-- <second_group translate="label" module="settings">
+				   <label>This is another group</label>
+				   <frontend_type>text</frontend_type>
+				   <sort_order>01</sort_order>
+				   <show_in_default>1</show_in_default>
+				   <show_in_website>1</show_in_website>
+				   <show_in_store>1</show_in_store>
+					 <fields>
+					     <my_input_field translate="label">
+					       <label>Input Field: </label>
+					       <comment>This is a comment</comment>
+					       <frontend_type>text</frontend_type>
+					       <sort_order>20</sort_order>
+					       <show_in_default>1</show_in_default>
+					       <show_in_website>1</show_in_website>
+					       <show_in_store>1</show_in_store>
+					     </my_input_field>
+					     <first_select_field translate="label">
+					       <label>Dropdown: </label>
+					       <comment>Source model provider Magento's default Yes/No values</comment>
+					       <frontend_type>select</frontend_type>
+					       <sort_order>90</sort_order>
+					       <show_in_default>1</show_in_default>
+					       <show_in_website>1</show_in_website>
+					       <show_in_store>1</show_in_store>
+					       <source_model>adminhtml/system_config_source_yesno</source_model>
+					     </first_select_field>
+					     <second_select_field translate="label">
+					       <label>Dropdown: </label>
+					       <comment>Source model provider Magento's default Yes/No values</comment>
+					       <frontend_type>select</frontend_type>
+					       <sort_order>90</sort_order>
+					       <show_in_default>1</show_in_default>
+					       <show_in_website>1</show_in_website>
+					       <show_in_store>1</show_in_store>
+					       <source_model>adminhtml/system_config_source_yesno</source_model>
+					     </second_select_field>
+					 </fields>
+				</second_group> -->
+			</groups>
+		</SWW>
+	</sections>
+</config>

@@ -1,0 +1,42 @@
+<!-- TopBar -->
+<div id="header-sticky-wrapper" class="sticky-wrapper">
+    <div id="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <?php echo $this->getChildHtml('topbar_cmslinks'); ?>
+                </div>
+                <div class="col-md-4 pull-right no-pad-right">
+                    <ul class="list-inline pull-right topbar_links no-pad-right">
+                            <li class="welcome"><?php echo $this->getLayout()->getBlock('header')->getWelcome() . "! "; ?></li>
+                        <?php if ($this->helper('customer')->isLoggedIn()): ?>
+                            <li>
+                                <a title="<?php echo $this->__('My Account') ?>" href="<?php echo $this->getUrl('customer/account') ?>"><?php echo $this->__('My Account') ?></a>
+                            </li>
+                            <li>
+                                <a title="Log Out" href="<?php echo $this->getUrl('customer/account/logout') ?>"><?php echo $this->__('Logout') ?></a>
+                            </li>
+                        <?php else: ?>
+                            <li>
+                                <a href="<?php echo $this->getUrl('customer/account/login/')?>"><?php echo $this->__('Login') ?></a></li>
+                            <li>
+                                <a href="<?php echo $this->getUrl('customer/account/create/')?>"><?php echo $this->__('Create Account') ?></a>
+                            </li>
+                        <?php endif;?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header starts -->
+<?php
+
+    //Getting the header id
+    $header_id = Mage::getStoreConfig('SWW/header_options/header_type');
+    $header_type = empty($header_id) ? Mage::getSingleton('core/design_package')->getBaseDir() .  "template/page/html/header/" . "header-1.php" : Mage::getSingleton('core/design_package')->getBaseDir() .  "template/page/html/header/" . $header_id . ".php";
+
+    include_once ($header_type);
+?>
+<!-- Header ends -->
+
+

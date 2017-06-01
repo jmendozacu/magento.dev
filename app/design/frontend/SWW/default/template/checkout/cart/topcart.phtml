@@ -1,0 +1,63 @@
+<?php
+    $_cart = Mage::helper('checkout/cart');
+    $_items = $_cart->getCart()->getItems();
+?>
+
+<div class="block block-topcart">
+    <div class="block-title">
+        <p><i class="fa fa-shopping-cart" aria-hidden="true"></i> My Cart</p>
+        <span>There is <?php echo count($_items) ?></span> items in the basket.</span>
+    </div>
+
+    <div class="block-content">
+        <?php if(count($_items)): ?>
+            <p class="block-subtitle"><?php echo $this->__('Recently added item(s)') ?></p>
+            <ol id="cart-sidebar" class="mini-products-list">
+                <?php foreach($_items as $_item): ?>
+                  <li><?php echo $_item->getName() ?></li>
+                <?php endforeach; ?>
+            </ol>
+            <script type="text/javascript">decorateList('cart-sidebar', 'none-recursive')</script>
+        <?php endif ?>
+        <?php if($_cartQty && $this->isPossibleOnepageCheckout()): ?>
+            <div class="actions">
+                <?php echo $this->getChildHtml('extra_actions') ?>
+                <button type="button" title="<?php echo $this->__('Checkout') ?>" class="btn btn-block btn-success" onclick="setLocation('<?php echo $this->getCheckoutUrl() ?>')">
+                    <?php  echo $this->__('Checkout') ?>
+                </button>
+            </div>
+        <?php endif ?>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!--<!--Old code-->
+<?php //$cart = Mage::getModel('checkout/cart')->getQuote(); ?>
+<!--<div class="block block-cart">-->
+<!--    <div class="block-title">-->
+<!--        <p><i class="fa fa-shopping-cart" aria-hidden="true"></i> My Cart</p>-->
+<!--        <span>There is --><?php //echo count($cart->getAllItems()); ?><!--</span> items in the basket. Total of: --><?php //$cart->getTotal(); ?><!--</span>-->
+<!--    </div>-->
+<!--    <div class="block-content">-->
+<!--        --><?php
+//            if (!count($cart->getAllItems()) == 0){
+//                echo "<ul>";
+//                foreach ($cart->getAllItems() as $item) {
+//                    $productName = $item->getProduct()->getName();
+//                    $productPrice = $item->getProduct()->getPrice();
+//                    $productId  = $item->getId();
+//                    echo "<li class='mini-cart-item'>" . $productName . " $" . $productPrice . " " . $productId . "</li>";
+//                }
+//                echo "</ul>";
+//            }
+//        ?>
+<!--    </div>-->
+<!--</div>-->
+
+
