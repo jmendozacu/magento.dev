@@ -179,11 +179,33 @@
 					</fields>
 				</footer_options>
 
+
+				<!--Category Page Settings -->
+				<category_view translate="label" module="settings">
+					<label>Category Page Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>3</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<category_input_field translate="label">
+							<label>Input Field: </label>
+							<comment>This is a comment</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>20</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</category_input_field>
+					</fields>
+				</category_view>
+
 				<!--THEME DESIGN-->
 				<theme_design translate="label" module="settings">
 					<label>Theme Settings</label>
 					<frontend_type>text</frontend_type>
-					<sort_order>3</sort_order>
+					<sort_order>4</sort_order>
 					<show_in_default>1</show_in_default>
 					<show_in_website>1</show_in_website>
 					<show_in_store>1</show_in_store>
@@ -200,7 +222,7 @@
 
 						<custom_css>
 							<label>Load Custom CSS: </label>
-							<comment>Enable/Disable custom CSS loading with Custom.css file.</comment>
+							<comment>Enable/Disable custom CSS loading with Custom.css file. This file is located under 'SWW/themepackage/css/'</comment>
 							<frontend_type>select</frontend_type>
 							<sort_order>1</sort_order>
 							<source_model>adminhtml/system_config_source_yesno</source_model>
@@ -209,6 +231,17 @@
 							<show_in_store>1</show_in_store>
 						</custom_css>
 
+						<extra_css>
+							<label>Custom Styles: </label>
+							<comment>Enter custom styles that will be used on the site. </comment>
+							<frontend_type>textarea</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+
+						</extra_css>
+
 					</fields>
 				</theme_design>
 
@@ -216,7 +249,7 @@
 				 <mygroup translate="label" module="settings">
 				   <label>My test group title</label>
 				   <frontend_type>text</frontend_type>
-				   <sort_order>4</sort_order>
+				   <sort_order>100</sort_order>
 				   <show_in_default>1</show_in_default>
 				   <show_in_website>1</show_in_website>
 				   <show_in_store>1</show_in_store>
