@@ -3,8 +3,23 @@
     <div id="topbar">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-sm-8">
-                    <?php echo $this->getChildHtml('topbar_cmslinks'); ?>
+                <div class="col-md-4 col-sm-8">
+                    <?php
+                        $left_block = Mage::getStoreConfig('SWW/header_options/topbar_left_block');
+
+                        if(!empty($left_block)) {
+                            echo $this->getLayout()->createBlock('cms/block')->setBlockId($left_block)->toHtml();
+                        }
+                    ?>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <?php
+                        $center_block = Mage::getStoreConfig('SWW/header_options/topbar_center_block');
+
+                        if (!empty($center_block)) {
+                            echo $this->getLayout()->createBlock('cms/block')->setBlockId($center_block)->toHtml();
+                        }
+                    ?>
                 </div>
                 <div class="col-md-4 pull-right no-pad-right">
                     <ul class="list-inline pull-right topbar_links no-pad-right">

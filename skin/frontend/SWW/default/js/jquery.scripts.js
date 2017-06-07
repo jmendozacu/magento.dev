@@ -1,7 +1,13 @@
 // This is important!
 jQuery.noConflict();
 jQuery(document).ready(function() {
-    jQuery('.navbar .parent').addClass('dropdown');
+    jQuery('.navbar .parent').addClass('dropdown dropdown-toggle');
+    //Adding the menu effects
+    jQuery('.navbar .parent').attr("data-toggle", "dropdown");
+    jQuery('.navbar .parent').attr("data-hover", "dropdown");
+    jQuery('.navbar .parent').attr("data-animations", "flip flip fadeInLeft bounce");
+
+
     jQuery('.navbar a.level-top').addClass('dropdown-toggle');
     jQuery('.navbar li.parent ul').addClass('dropdown-menu');
     jQuery('.navbar li.level1 ul').wrap('<li class="dropdown-submenu"/>');
@@ -18,12 +24,4 @@ jQuery(document).ready(function() {
         theme: 'facebook',
         opacity: 0.50
     });
-
-
-
-
-
-
-
-
 });

@@ -1,7 +1,40 @@
-<?php $_menu = $this->getHtml('level-top') ?>
-<?php if ($_menu): ?>
-    <ul class="nav navbar-nav">
-        <li><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>">Home</a></li>
-    <?php echo $_menu ?>
-    </ul>
-<?php endif ?>
+<script type="text/javascript">
+//    jQuery(document).ready(function() {
+//        var $menu_animations = '<?php //echo
+//                Mage::getStoreConfig('SWW/menu_options/bottom_animation') . " " .
+//                Mage::getStoreConfig('SWW/menu_options/left_animation') . " " .
+//                Mage::getStoreConfig('SWW/menu_options/top_animation') . " " .
+//                Mage::getStoreConfig('SWW/menu_options/right_animation')
+//        ; ?>////';
+//
+//        jQuery('.navbar .parent').addClass('dropdown dropdown-toggle');
+//        //Adding the menu effects
+//        jQuery('.navbar .parent').attr("data-toggle", "dropdown");
+//        jQuery('.navbar .parent').attr("data-hover", "dropdown");
+//        jQuery('.navbar .parent').attr("data-animations", $menu_animations);
+//
+//
+//        jQuery('.navbar a.level-top').addClass('dropdown-toggle');
+//        jQuery('.navbar li.parent ul').addClass('dropdown-menu');
+//        jQuery('.navbar li.level1 ul').wrap('<li class="dropdown-submenu"/>');
+//        jQuery('.navbar ul.nav li.level0.dropdown').hover(function() {
+//            jQuery(this).find('.level0.dropdown-menu').stop(true, true).fadeIn();
+//        }, function() {
+//            jQuery(this).find('.level0.dropdown-menu').stop(true, true).fadeOut();
+//        });
+//    });
+</script>
+
+<div class="dropdown">
+    <?php $_menu = $this->getHtml('level-top') ?>
+
+    <?php if ($_menu): ?>
+        <ul class="nav navbar-nav">
+            <?php if(Mage::getStoreConfig('SWW/menu_options/toggle_home') == 1) :?>
+                <li><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>">Home</a></li>
+            <?php endif ?>
+
+            <?php echo $_menu ?>
+        </ul>
+    <?php endif ?>
+</div>

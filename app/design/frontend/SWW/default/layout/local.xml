@@ -86,6 +86,19 @@ Copyright (c) 2013 Andrea Saccà.
                 <stylesheet>css/prettyPhoto.css</stylesheet>
             </action>
 
+            <!--Megamenu Styles and Javascript-->
+            <action method="addCss">
+                <stylesheet>css/animate.min.css</stylesheet>
+            </action>
+            <action method="addCss">
+                <stylesheet>css/bootstrap-dropdownhover.min.css</stylesheet>
+            </action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/bootstrap-dropdownhover.min.js</name>
+            </action>
+
+
         </reference>
 
         <reference name="header">

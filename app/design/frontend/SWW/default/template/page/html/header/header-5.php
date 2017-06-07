@@ -1,7 +1,7 @@
 <div id="header">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-3">
                 <a class="logo" href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>">
                     <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" />
                 </a>
